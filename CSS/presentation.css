@@ -16,13 +16,12 @@
         font-size: 0.9rem;
     }
     .navigation{
-        padding: 0.3rem 0.05rem;
+        padding: 0.3rem 0.5rem;
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: 3.5rem;
-        gap: 8%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         background: #a50b5e;
         position: fixed;
         top: 0;
@@ -181,6 +180,9 @@
         background: #a50b5e;
         color: #fff;
     }
+    .NFT-img{
+        display: none;
+    }
     .fourth-cont p{
         margin-bottom: 2rem;
         line-height: 2;
@@ -320,13 +322,12 @@
         font-size: 1.2rem;
     }
     .navigation{
-        padding: 0.5rem 0.25rem;
+        padding: 0.5rem 1rem;
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: 3.5rem;
-        gap: 16%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         background: #a50b5e;
     }
     .logo-color{
@@ -492,6 +493,9 @@
         color: #a50b5e;
         border-radius: 10px;
     }
+    .NFT-img{
+        display: none;
+    }
     .footer{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -596,15 +600,14 @@
 }
 
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     .navigation{
-        padding: 0.5rem 0.25rem;
+        padding: 0.5rem 1.5rem;
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto;
-        gap: 16.5em;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         background: #fff;
     }
     .logo-color{
@@ -797,12 +800,24 @@
         float: right;
     }
     .fourth-cont{
-        padding: 6rem 3rem 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 5rem;
         background: #a50b5e;
         color: #fff;
     }
+    .NFT-TALK{
+        width: 40%;
+    }
+    .NFT-img{
+        display: inline;
+    }
+    .group{
+        height: 25rem;
+    }
     .fourth-cont p{
-        width: 27%;
+        width: 70%;
         font-size: 1rem;
         margin-bottom: 2rem;
         line-height: 2;
@@ -914,4 +929,3 @@
     }
 
 }
-
