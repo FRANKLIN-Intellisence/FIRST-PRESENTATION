@@ -1,6 +1,6 @@
 // get modal 
 const modal = document.getElementById("mid");
-const body = document.getElementById("body")
+const body = document.getElementById("body");
 
 // get button that opens the modal
 const btn = document.getElementById("mybtn");
