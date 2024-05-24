@@ -10,8 +10,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e5808f4bd.js" crossorigin="anonymous"></script>
+    <script src="JAVASCRIPT/app.js" defer></script>
 </head>
-<body>
+<body id="body">
+    <!-- MY MODAL -->
+    <div id="mid" class="mid">
+        <div id="my-modal" class="my-modal">
+            <div id="mod-head" class="mod-head">
+                <h2>Connect Wallet</h2>
+                <span id="close" class="close">&times;</span>
+            </div>
+            <div>
+                <p class="choose">Choose your preferred wallet</p>
+            </div>
+            <div class="mod-content meto">
+                <div class="conti">
+                    <img src="IMAGES/image 66.png" alt="">
+                    <span>Metamask</span>
+                </div>
+                <span>></span>
+            </div>
+            <div class="mod-content">
+                <div class="conti">
+                    <img src="IMAGES/image 69.png" alt="">
+                    <span>Wallet Connect</span>
+                </div>
+                <span>></span>
+            </div>
+        </div>
+    </div>
     <!-- NAVIGATION -->
     <nav class="navigation">
         <div class="logo-color">
@@ -32,7 +59,7 @@
 
         <div class="nav-right">
             <div class="con">
-                <a href="#">Connect Wallet</a>
+                <a href="#mid" id="mybtn">Connect Wallet</a>
             </div>
             <div class="search">
                 <img src="IMAGES/🦆 icon _search_.png" alt="SEARCH">
