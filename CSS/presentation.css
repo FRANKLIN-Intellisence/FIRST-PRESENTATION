@@ -310,7 +310,7 @@
         cursor: pointer;
     }
     .choose{
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     .meto{
         margin-bottom: 0.6rem;
@@ -609,7 +609,7 @@
         border-radius: 5px;
     }
     .choose{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .meto{
         margin-bottom: 0.6rem;
@@ -929,7 +929,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: -1.5rem;
+        margin-top: -1.5rem;
     }
     .mod-content{
         display: flex;
@@ -957,5 +957,5 @@
         font-size: 2rem;
         cursor: pointer;
     }
-
+    
 }
