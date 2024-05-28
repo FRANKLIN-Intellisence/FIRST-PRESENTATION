@@ -2,26 +2,23 @@
 const modal = document.getElementById("mid");
 const body = document.getElementById("body");
 
-// get button that opens the modal
 const btn = document.getElementById("mybtn");
-
-// get span that closes modal 
 const close = document.getElementsByClassName("close")[0];
 
-// open modal when the button is clicked 
-btn.onclick = function() {
+//Implement Modal Elements
+btn.addEventListener("click", openModal);
+function openModal() {
     modal.style.display = "block";
     body.style.overflow = "hidden";
 }
 
-// when user clicks close, close the modal 
-close.onclick = function() {
+close.addEventListener("click", closeModal)
+function closeModal() {
     modal.style.display = "none";
     search.style.display = "none";
     body.style.overflow = "auto";
 }
 
-// when the user clicks anywhere outside the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -29,21 +26,35 @@ window.onclick = function(event) {
     }
 }
 
+//List elements
+const ListEl = document.getElementById("list-2");
+const hamburgerEl = document.querySelector(".hamburger");
+const CloseListEl = document.querySelector(".list-close"); 
+
+hamburgerEl.addEventListener("click", openList);
+function openList() {
+    ListEl.style.display = "flex";
+}
+
+CloseListEl.addEventListener("click", closeList);
+function closeList() {
+    ListEl.style.display = "none";
+}
+
 
 // get Mobile-search elements 
 const sead = document.getElementById("sead");
 const search = document.getElementById("mobile-search");
+const clean = document.getElementsByClassName("mobile-button")[0];
 
-// get button that opens search-moblie
-sead.onclick = function() {
+//Implementing Mobile-serach button
+sead.addEventListener("click", OpenSead);
+function OpenSead() {
     search.style.display = "flex";
 }
 
-//get the search button that closes the mobile-search
-const clean = document.getElementsByClassName("mobile-button")[0];
-
-//getting the search button closer to work
-clean.onclick = function(event) {
+clean.addEventListener("click", CloseSearch);
+function CloseSearch(event) {
     if (event.target == clean) {
         search.style.display = "none";
     }
