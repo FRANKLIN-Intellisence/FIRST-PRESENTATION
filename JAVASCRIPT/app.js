@@ -12,7 +12,7 @@ function openModal() {
     body.style.overflow = "hidden";
 }
 
-close.addEventListener("click", closeModal)
+close.addEventListener("click", closeModal);
 function closeModal() {
     modal.style.display = "none";
     search.style.display = "none";
